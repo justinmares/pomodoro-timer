@@ -1,0 +1,98 @@
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f6f8fd 0%, #f1f4f9 100%);
+    color: #2d3748;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 2rem;
+    letter-spacing: -0.5px;
+}
+
+.timer {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    color: #4a5568;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -2px;
+}
+
+.controls {
+    margin: 1.5rem 0;
+}
+
+.controls button, #toggle-mode {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    letter-spacing: -0.3px;
+}
+
+.controls button {
+    background-color: #5a67d8;
+    color: white;
+}
+
+.controls button:hover {
+    background-color: #4c51bf;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(90, 103, 216, 0.2);
+}
+
+#toggle-mode {
+    background-color: #fc8181;
+    color: white;
+}
+
+#toggle-mode:hover {
+    background-color: #f56565;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(252, 129, 129, 0.2);
+}
+
+.mode-toggle {
+    margin: 1rem 0;
+}
+
+.mode {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: #718096;
+    font-weight: 500;
+}
+
+/* Add subtle animation for timer changes */
+#minutes, #seconds {
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+/* Add focus states for accessibility */
+button:focus {
+    outline: none;
+    outline: 2px solid #5a67d8;
+    outline-offset: 2px;
+} 
